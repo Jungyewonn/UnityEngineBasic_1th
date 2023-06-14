@@ -53,14 +53,14 @@
         private char gender;
         public string name;
 
-        // 생성자
+        // 생성자 :
         // 메모리공간에 해당 클래스타입의 객체를 할당하는 (생성하는) 함수
         public Human()
         {
 
         }
 
-        // 소멸자
+        // 소멸자 :
         // 객체를 메모리에서 해제하는 함수
         ~Human()
         {

@@ -66,7 +66,7 @@
         public void SayName()
         {
             // this 키워드
-            // 객체 자기 자신 참조 키워드(이 함수를 호출한 객체의 참조)
+            // 객체 자기 자신 참조 키워드(이 함수를 호출한 객체의 참조 )
             Console.WriteLine(this.name);
         }
     }
