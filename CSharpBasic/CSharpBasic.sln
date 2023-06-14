@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassObjectinstance", "Clas
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassObjectinstance+", "ClassObjectinstance+\ClassObjectinstance+.csproj", "{ECEA01AE-446F-408B-A132-B97E56B95F4C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Method", "Method\Method.csproj", "{1F21A886-DE15-4C6F-A767-9CEFFDC17602}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{ECEA01AE-446F-408B-A132-B97E56B95F4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECEA01AE-446F-408B-A132-B97E56B95F4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECEA01AE-446F-408B-A132-B97E56B95F4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F21A886-DE15-4C6F-A767-9CEFFDC17602}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F21A886-DE15-4C6F-A767-9CEFFDC17602}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F21A886-DE15-4C6F-A767-9CEFFDC17602}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F21A886-DE15-4C6F-A767-9CEFFDC17602}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
