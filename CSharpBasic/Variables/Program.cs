@@ -25,7 +25,6 @@ namespace Variables
 
             float float1 = 3.5f; // 4byte 실수형
             double double1 = 3.0;
-
             bool bool1 = true; // 1byte 논리형 (boolean) 0일 경우 false, 0이 아닐경우 true
             char char1 = 'A'; // 2byte 문자형, ASCII 코드표에따른 정수형을 사용
             string string1 = "Hello?"; // 2byte * 문자수 + 1byte (null)
