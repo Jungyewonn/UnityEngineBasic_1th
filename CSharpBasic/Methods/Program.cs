@@ -12,6 +12,7 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace Methods
 {
+    // void : 반환 할 타입이 없다
     internal class Program
     {
         static void Main(string[] args)
@@ -19,11 +20,20 @@ namespace Methods
            
             int sum = Sum(1, 2);
             Console.WriteLine(sum);
+            SayHello();
         }
 
         static int Sum(int a, int b)
         {
             return a + b;
+        }
+
+        static void SayHello()
+        {
+            Console.WriteLine("Hi");
+            Console.WriteLine("Hello");
+            Console.WriteLine("How r u?");
+            return; // void 반환 함수에서 마지막 return 은 생략가능하다.
         }
     }
 }
