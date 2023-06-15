@@ -5,6 +5,14 @@
     // 참조 타입 - 객체가 있는 주소참조를 통해 간접적으로 값을 읽고 씀
     internal class Program
     {
+        // class : 객체를 정의하는 타입
+        // object : class 타입에 따라 할당된 메모리영역
+        // instance : object 인데 데이터가 초기화되었을 경우. instasnce ⊂ object
+        // C# 에서는 instance 가 아닌 object 는 없음 (생성자호출시 전부 초기화하기때문에)
+
+        // static : 정적 키워드
+        // 동적할당이 불가능하다는 키워드
+        // (객체참조를 통해 접근할수 없다는것을 명하는 키워드)
         static void Main(string[] args)
         {
             // 지역변수
@@ -18,10 +26,15 @@
             Human human1 = new Human();
             Human human2 = new Human();
 
+            // instance 멤버는 instance 참조에 . 연산자를 사용
             human1.name = "Luke";
             human2.name = "Kar1";
             human1.SayName();
             human2.SayName();
+
+            // static 멤버는 class타입에 . 연산자를 사용
+            Human human3 = Human.Create("Jason");
+            human3.SayName();
 
             // . 멤버 접근 연산자
             Console.WriteLine(human1.age);
@@ -47,6 +60,7 @@
     // internal - 동일 어셈블리내에서 접근 가능
     class Human
     {
+        public static int st_dnaId = 1234;
         public int age;
         private float height;
         private double weight;
@@ -63,6 +77,15 @@
         // 소멸자
         // 객체를 메모리에서 해체하는 함수
 
+        // Human 의 static (정적) 멤버 함수
+        public static Human Create(string name)
+        {
+            Human human = new Human();
+            human.name = name;
+            return human;
+        }
+
+        // Human instance 의 멤버 함수
         public void SayName()
         {
             // this 키워드
